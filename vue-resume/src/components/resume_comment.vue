@@ -24,16 +24,16 @@
         value: '',
         header_icon:
           [
-            '../../static/header1.svg',
-            '../../static/header2.svg',
-            '../../static/header3.svg',
-            '../../static/header4.svg',
-            '../../static/header5.svg',
-            '../../static/header6.svg',
-            '../../static/header7.svg',
-            '../../static/header8.svg',
-            '../../static/header9.svg',
-            '../../static/header10.svg',
+            '../static/header1.svg',
+            '../static/header2.svg',
+            '../static/header3.svg',
+            '../static/header4.svg',
+            '../static/header5.svg',
+            '../static/header6.svg',
+            '../static/header7.svg',
+            '../static/header8.svg',
+            '../static/header9.svg',
+            '../static/header10.svg',
           ]
       }
     },
