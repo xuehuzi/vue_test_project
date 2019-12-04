@@ -53,7 +53,7 @@
             项目说明,项目说明,项目说明,项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明
             项目说明,项目说明,项目说明,项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明`,
             imgs: [
-              {src: '../static/canvas.jpg'},
+              {src: require('../assets/canvas.jpg')}
             ]
           },
           {
@@ -61,10 +61,11 @@
             stack: 'js/vue/css/webpack',
             description: '项目说明',
             imgs: [
-              {src: '../static/music.jpg'},
-              {src: '../static/music1.jpg'},
-              {src: '../static/music2.jpg'},
-              {src: '../static/music.jpg'},
+              {src: require('../assets/music.jpg')},
+              {src: require('../assets/music1.jpg')},
+              {src: require('../assets/music2.jpg')},
+              {src: require('../assets/music.jpg')}
+
             ]
           },
           {
@@ -72,10 +73,10 @@
             stack: 'js/vue/css/webpack',
             description: '项目说明',
             imgs: [
-              {src: '../static/cnnode.jpg'},
-              {src: '../static/cnnode1.jpg'},
-              {src: '../static/cnnode2.jpg'},
-              {src: '../static/cnnode.jpg'},
+              {src: require('../assets/cnnode.jpg')},
+              {src: require('../assets/cnnode1.jpg')},
+              {src: require('../assets/cnnode2.jpg')},
+              {src: require('../assets/cnnode.jpg')}
             ]
           },
           {
@@ -83,11 +84,11 @@
             stack: 'js/vue/css/webpack',
             description: '项目说明',
             imgs: [
-              {src: '../../static/webqq.jpg'},
-              {src: '../../static/webqq1.jpg'},
-              {src: '../../static/webqq2.jpg'},
-              {src: '../../static/webqq3.jpg'},
-              {src: '../../static/webqq.jpg'},
+              {src: require('../assets/webqq.jpg')},
+              {src: require('../assets/webqq1.jpg')},
+              {src: require('../assets/webqq2.jpg')},
+              {src: require('../assets/webqq3.jpg')},
+              {src: require('../assets/webqq.jpg')}
             ]
           },
           {
@@ -95,7 +96,7 @@
             stack: 'js/vue/css/webpack',
             description: '项目说明',
             imgs: [
-              {src: '../static/choujiang.jpg'},
+              {src: require('../assets/choujiang.jpg')},
             ]
           },
           {
@@ -103,7 +104,7 @@
             stack: 'js/vue/css/webpack',
             description: '项目说明',
             imgs: [
-              {src: '../static/pikaqiu.jpg'},
+              {src: require('../assets/pikaqiu.jpg')},
             ]
           }
         ],

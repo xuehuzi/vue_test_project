@@ -20,21 +20,21 @@
       return {
         imglists: [
           {
-            src: '../static/download.svg',
+            src: require('../assets/download.svg'),
             introduce: '下载简历',
-            href: '../../static/avatar.png'
+            href:require('../assets/avatar.png')
           },
           {
-            src: '../static/github.svg',
+            src: require('../assets/github.svg'),
             introduce: 'GitHub',
             href:'https://github.com/xuehuzi?tab=overview&from=2019-12-01&to=2019-12-03'
           },
           {
-            src: '../static/code.svg',
+            src: require('../assets/code.svg'),
             introduce: '3'
           },
           {
-            src: '../static/stack.svg',
+            src: require('../assets/stack.svg'),
             introduce: '4'
           },
 

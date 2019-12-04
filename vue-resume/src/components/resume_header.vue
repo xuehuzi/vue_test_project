@@ -3,7 +3,7 @@
     <div class="resume_header_row">
       <div class="header_icon">
         <span href="" class="nav_icon">
-          <img src="../../static/logo.svg" alt="">
+          <img src="../assets/logo.svg" alt="">
           <span>name • 应聘Web前端</span>
         </span>
       </div>

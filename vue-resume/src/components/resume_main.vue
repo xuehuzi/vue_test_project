@@ -4,7 +4,7 @@
     <div class="main_list">
       <section data_x id="about_information" class="section_list_1 section_list">
         <div class="header_pic">
-          <img src="../../static/avatar.png" alt="">
+          <img src="../assets/avatar.png" alt="">
         </div>
         <div class="header_info">
           <h3>{{myname}}</h3>
@@ -117,27 +117,27 @@
         ],
         works: [
           {
-            src: '../static/cnnode.jpg',
+            src: require('../assets/cnnode.jpg'),
             content: 'Vue搭建cnnode社区'
           },
           {
-            src: '../static/music.jpg',
+            src: require('../assets/music.jpg'),
             content: '原生JS(ES6)实现音乐播放器'
           },
           {
-            src: '../static/webqq3.jpg',
+            src: require('../assets/webqq3.jpg'),
             content: '原生JS(ES5)实现WebQQ界面'
           },
           {
-            src: '../static/choujiang.jpg',
+            src: require('../assets/choujiang.jpg'),
             content: '原生JS(ES5)实现转盘抽奖'
           },
           {
-            src: '../static/pikaqiu.jpg',
+            src: require('../assets/pikaqiu.jpg'),
             content: '原生JS & CSS3实现皮卡丘动画'
           },
           {
-            src: '../static/canvas.jpg',
+            src: require('../assets/canvas.jpg'),
             content: 'cavas画板'
           },
         ],

@@ -24,16 +24,16 @@
         value: '',
         header_icon:
           [
-            '../static/header1.svg',
-            '../static/header2.svg',
-            '../static/header3.svg',
-            '../static/header4.svg',
-            '../static/header5.svg',
-            '../static/header6.svg',
-            '../static/header7.svg',
-            '../static/header8.svg',
-            '../static/header9.svg',
-            '../static/header10.svg',
+            require('../assets/header1.svg'),
+            require('../assets/header2.svg'),
+            require('../assets/header3.svg'),
+            require('../assets/header4.svg'),
+            require('../assets/header5.svg'),
+            require('../assets/header6.svg'),
+            require('../assets/header7.svg'),
+            require('../assets/header8.svg'),
+            require('../assets/header9.svg'),
+            require('../assets/header10.svg'),
           ]
       }
     },
