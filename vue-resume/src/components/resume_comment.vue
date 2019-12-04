@@ -59,6 +59,7 @@
               let div = document.createElement('div');
               span.innerText = `${obj.attributes.name}: ${obj.attributes.msgvalue}`;
               img.src = `${obj.attributes.header_icon}`;
+
               img.className = 'header_icon';
               div.className = 'img_container';
               msg_list.appendChild(li);

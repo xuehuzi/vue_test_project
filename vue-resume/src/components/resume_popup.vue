@@ -53,7 +53,7 @@
             项目说明,项目说明,项目说明,项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明
             项目说明,项目说明,项目说明,项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明`,
             imgs: [
-              {src: '../../static/canvas.jpg'},
+              {src: '../static/canvas.jpg'},
             ]
           },
           {
@@ -61,10 +61,10 @@
             stack: 'js/vue/css/webpack',
             description: '项目说明',
             imgs: [
-              {src: '../../static/music.jpg'},
-              {src: '../../static/music1.jpg'},
-              {src: '../../static/music2.jpg'},
-              {src: '../../static/music.jpg'},
+              {src: '../static/music.jpg'},
+              {src: '../static/music1.jpg'},
+              {src: '../static/music2.jpg'},
+              {src: '../static/music.jpg'},
             ]
           },
           {
@@ -72,10 +72,10 @@
             stack: 'js/vue/css/webpack',
             description: '项目说明',
             imgs: [
-              {src: '../../static/cnnode.jpg'},
-              {src: '../../static/cnnode1.jpg'},
-              {src: '../../static/cnnode2.jpg'},
-              {src: '../../static/cnnode.jpg'},
+              {src: '../static/cnnode.jpg'},
+              {src: '../static/cnnode1.jpg'},
+              {src: '../static/cnnode2.jpg'},
+              {src: '../static/cnnode.jpg'},
             ]
           },
           {
@@ -95,7 +95,7 @@
             stack: 'js/vue/css/webpack',
             description: '项目说明',
             imgs: [
-              {src: '../../static/choujiang.jpg'},
+              {src: '../static/choujiang.jpg'},
             ]
           },
           {
@@ -103,7 +103,7 @@
             stack: 'js/vue/css/webpack',
             description: '项目说明',
             imgs: [
-              {src: '../../static/pikaqiu.jpg'},
+              {src: '../static/pikaqiu.jpg'},
             ]
           }
         ],
