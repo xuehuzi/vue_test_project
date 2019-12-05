@@ -55,10 +55,6 @@
           t = 500
         }
 
-
-
-        //边界处理，留言部分内容高度不够时，nav留言文字没变色
-
         function animate(time) {
           requestAnimationFrame(animate);
           TWEEN.update(time);
@@ -81,8 +77,16 @@
 
       function scroll_move() {
         let signs = document.querySelectorAll('[data_x]');//选择所有包含data_x标记的标签
+        /**/
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        let clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+        let scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+        /**/
         for (let i = 0; i < signs.length; i++) {
-          if (Math.abs(signs[i].offsetTop - window.scrollY) < Math.abs(signs[that.sign_index].offsetTop - window.scrollY)) {
+          if (scrollHeight > clientHeight && scrollTop + clientHeight === scrollHeight) {
+            //边界处理：留言部分高度达不到时，点击留言或者滚到底时，nav留言文字不变色
+            that.sign_index = signs.length - 1;
+          } else if (Math.abs(signs[i].offsetTop - window.scrollY) < Math.abs(signs[that.sign_index].offsetTop - window.scrollY)) {
             that.sign_index = i;
           }
         }
