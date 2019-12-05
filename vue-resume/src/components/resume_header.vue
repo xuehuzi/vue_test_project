@@ -13,7 +13,7 @@
             <li
               v-for="(list,index) in lists"
               :class="[{nav_active:(sign_index === index)}]"
-              @click.prevent="get_section($event)">
+              @click.prevent="get_section($event,index)">
               <a :href="list.href">{{list.title}}</a>
             </li>
           </ul>
@@ -42,18 +42,22 @@
       }
     },
     methods: {
-      get_section: function (event) {
+      get_section: function (event, index) {
         let a_href = event.currentTarget.firstChild.getAttribute('href');
         let Jump_target = document.querySelector(a_href);
         let Jump_top = Jump_target.offsetTop;
         let currentTop = window.scrollY;
-        let targetTop = Jump_top - 100;
+        let targetTop = Jump_top - 30;
         let s = targetTop - currentTop; // 路程
         let coords = {y: currentTop}; // 起始位置
         let t = Math.abs((s / 100) * 300); // 时间
         if (t > 500) {
           t = 500
         }
+
+
+
+        //边界处理，留言部分内容高度不够时，nav留言文字没变色
 
         function animate(time) {
           requestAnimationFrame(animate);
@@ -70,7 +74,6 @@
           })
           .start(); // 开始缓动
         animate()
-
       }
     },
     mounted() {
@@ -98,12 +101,12 @@
 
       window.onscroll = function () {
         let resume_header = document.querySelector('.resume_header');
+        scroll_move();
         if (window.scrollY > 0) {
           resume_header.classList.add('top_nav_bg');
         } else {
           resume_header.classList.remove('top_nav_bg');
         }
-        scroll_move()
       }
       //topnav滚动事件
     }
@@ -152,7 +155,7 @@
     cursor: pointer;
   }
 
-  .nav_list > nav > ul li a:hover{
+  .nav_list > nav > ul li a:hover {
     color: #e06567;
   }
 

@@ -55,11 +55,10 @@
       </section>
     </div>
     <resume_popup
-      class="open_popup_mask"
       :son_btnmsg="fathermsg"
       :son_closemask="fathermsg1"
       @popup_maskflg="getson"
-      v-if="ttsss">
+      v-show="ttsss">
     </resume_popup>
   </div>
 </template>
@@ -142,7 +141,7 @@
           },
         ],
         fathermsg: '',
-        fathermsg1: '',
+        fathermsg1: false,
         ttsss: false
       }
     },
@@ -161,10 +160,10 @@
         this.fathermsg = this.works[val].content;//获取点击了那个项目并传递给子组件
         this.fathermsg1 = true;
         this.ttsss = true;//打开弹出框遮罩
-
       },
       getson: function (val) {
         this.ttsss = val;//接收子组件弹出框遮罩关闭发来的消息
+        this.fathermsg1 = false;
       },
     }
   }
