@@ -32,7 +32,9 @@
           <h4>技术栈：{{content_list.stack}}</h4>
           <h4>项目介绍：</h4>
           <p>{{content_list.description}}</p>
-          <a :href="content_list.href" target="_blank">源码</a>
+          <div>
+            <a :href="content_list.href" target="_blank">预览 & 源码</a>
+          </div>
         </div>
       </div>
     </div>
@@ -211,7 +213,7 @@
   *
   * 》》》轮播逻辑
   * 父组件传来的son_btnmsg确定当前那个项目弹窗是打开的
-  * 两个UL标签的v-if和v-else确定渲染不同轮播展示效果（content_list.imgs.length >= 3，至少需3张图，2张正常轮播1张自动轮播需要的替换图）
+  * 两个UL标签的v-if确定渲染不同轮播展示效果（content_list.imgs.length，至少需3张图，2张正常轮播1张自动轮播需要的替换图）
   * */
 </script>
 
@@ -240,10 +242,6 @@
     padding: 30px;
     /*display: none;*/
   }
-
-  /*.show_popup_content {*/
-  /*display: block;*/
-  /*}*/
 
   .popupimg_body {
     overflow: hidden;
@@ -292,10 +290,16 @@
     margin-bottom: 10px;
   }
 
-  .popupcontent_body > a {
-    padding: 10px 40px;
-    border-radius: 15px;
+  .popupcontent_body > div {
+    text-align: center;
+  }
+
+  .popupcontent_body > div > a {
+    padding: 8px 30px;
+    border-radius: 10px;
     background: #e1e1e1;
+    border: 1px solid #cdcfd1;
+    color: #3d4451;
   }
 
 </style>

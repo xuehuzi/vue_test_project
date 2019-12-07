@@ -30,6 +30,7 @@
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 1;
   }
 
   .Header>div{
@@ -49,6 +50,10 @@
     display: inline-block;
     padding: 10px 15px;
     color: #ccc;
+  }
+
+  .header_list a li:hover {
+    color: #80bd01;
   }
 
   img {

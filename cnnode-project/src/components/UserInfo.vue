@@ -1,10 +1,10 @@
 <template>
-  <div v-if="isloading">
+  <div class="loading" v-if="isloading">
     <img src="../assets/loading.gif">
   </div>
   <div v-else>
     <sidebar></sidebar>
-    <div  class="ArticleContent_main">
+    <div class="ArticleContent_main">
       <section class="panel">
         <router-link :to="{name:'root'}">
           <div class="user_info_header">主页/</div>
@@ -74,7 +74,18 @@
 </script>
 
 <style scoped>
-  .ArticleContent_main{
+  .loading {
+    height: 84.5vh;
+    background: black;
+    opacity: 0.7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ArticleContent_main {
     margin-right: 305px;
   }
 
@@ -92,7 +103,7 @@
     padding: 11px 10px;
   }
 
-  .user_info_body > li  {
+  .user_info_body > li {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

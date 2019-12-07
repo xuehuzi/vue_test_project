@@ -26,16 +26,16 @@
           },
           {
             src: require('../assets/github.svg'),
-            introduce: 'GitHub',
+            introduce: '查看源码',
             href:'https://github.com/xuehuzi?tab=overview&from=2019-12-01&to=2019-12-03'
           },
           {
             src: require('../assets/code.svg'),
-            introduce: '3'
+            introduce: '敬请期待'
           },
           {
             src: require('../assets/stack.svg'),
-            introduce: '4'
+            introduce: '敬请期待'
           },
 
         ]

@@ -3,11 +3,8 @@
     <resume_sidebar></resume_sidebar>
     <div class="main_list">
       <section data_x id="about_information" class="section_list_1 section_list">
-        <div class="header_pic">
-          <img src="../assets/avatar.png" alt="">
-        </div>
         <div class="header_info">
-          <h3>{{myname}}</h3>
+          <h2>{{myname}}</h2>
           <p v-for="info in infos">{{info}}</p>
         </div>
       </section>
@@ -34,7 +31,7 @@
         </ol>
       </section>
       <section data_x id="about_history" class="section_list_2 section_list">
-        <h2>工作经历</h2>
+        <h2>工作&教育经历</h2>
         <div class="work_time" v-for="(history,index) in historys">
           <div class="time_line">
             <span>
@@ -74,7 +71,7 @@
     data: function () {
       return {
         myname: '求职意向：Web前端',
-        infos: ['姓名：name', '年龄：111', '城市：西安', '手机：12345678910', '邮箱：123456789@qq.com'],
+        infos: ['姓名：薛玉虎', '年龄：31', '性别：男', '学历：专科', '城市：西安', '电话：189—9139—8171', '邮箱：xueyuhu5084@163.com'],
         skills: ['HTML 5 & CSS 3', 'JavaScript', 'Vue', 'Http', 'Webpack', '产品及运营相关'],
         active: 0,
         historys: [
@@ -112,6 +109,13 @@
             company_name: '中国科技有限责任公司公司',
             post_name: '运营策划',
             job_content: '1231231231231231231232133123123123123123123123123'
+          },
+          {
+            star_time: '2006.9',
+            end_time: '2009.6',
+            company_name: '学校：杨凌职业技术学院',
+            post_name: '专业：旅游管理',
+            job_content: ''
           },
         ],
         works: [
@@ -212,35 +216,22 @@
   .section_list {
     margin-bottom: 20px;
     border-bottom: 1px solid #e1e1e1;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   .section_list_1 {
     background-color: #c0e3e7;
-    padding: 50px;
-    display: flex;
-  }
-
-  .header_pic {
-    height: 195px;
-    width: 195px;
   }
 
   .header_info {
-    margin-left: 100px;
-    display: flex;
-    flex-direction: column;
-    /*align-items: center;*/
-    justify-content: center;
+  padding-top: 30px;
   }
 
   .header_info p {
-    margin: 5px 0;
+    margin: 10px 0;
     color: #3d4451;
-  }
-
-  .header_pic > img {
-    border-radius: 50%;
+    font-size: 17px;
+    padding-left: 15px;
   }
 
   .header_info > ul > li {
@@ -366,6 +357,7 @@
   .work_history p {
     font-weight: bolder;
     margin-bottom: 5px;
+    color: #3d4451;
   }
 
   .work_history span {

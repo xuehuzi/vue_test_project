@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <div class="wrapper">
+    <div v-if="isloading" class="loading_animation">
+      <div class="loading"></div>
+    </div>
+    <div v-else class="wrapper">
       <div class="svg_bg">
         <svg id="shape-1" class="shape-1" height="519" width="758" fill="black">
           <polygon class="pol" points="0,455,693,352,173,0,92,0,0,71"></polygon>
@@ -13,7 +16,6 @@
       <resume_header></resume_header>
       <resume_main></resume_main>
     </div>
-
   </div>
 </template>
 <script>
@@ -24,6 +26,17 @@
     name: 'App',
     components: {
       resume_header, resume_main
+    },
+    data: function () {
+      return {
+        isloading: true
+      }
+    },
+    mounted() {
+      let that = this;
+      let timer = setTimeout(function () {
+        that.isloading = false;
+      }, 3000)
     }
   }
 </script>
@@ -42,6 +55,14 @@
     font-family: Quicksand, sans-serif;
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  h2, h4 {
+    color: #3d4451;
+  }
+
   li {
     list-style: none;
   }
@@ -51,13 +72,13 @@
     width: 100%;
   }
 
-  .shape-1{
+  .shape-1 {
     position: absolute;
     left: 0;
     opacity: 0.1;
   }
 
-  .shape-2{
+  .shape-2 {
     position: absolute;
     right: 0;
   }
@@ -67,6 +88,52 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
+  }
+
+  .loading_animation {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+  }
+
+  .loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 50%;
+  }
+
+  .loading::before,
+  .loading::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    animation: loading_animation 2s linear infinite;
+    background: black;
+
+  }
+
+  .loading::after {
+    animation-delay: 0.75s;
+  }
+
+  @keyframes loading_animation {
+    from {
+      height: 0;
+      width: 0;
+      opacity: 1;
+    }
+
+    to {
+      height: 100px;
+      width: 100px;
+      opacity: 0;
+    }
   }
 
 

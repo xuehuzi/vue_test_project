@@ -1,6 +1,6 @@
 <template>
   <div class="content_main">
-    <div v-if="isloading">
+    <div class="loading" v-if="isloading">
       <img src="../assets/loading.gif">
     </div>
     <div v-else>
@@ -84,11 +84,41 @@
 <style>
   @import url("../assets/markdown-github.css");
 
-  .markdown-text > p {
+  .loading{
+    height: 100vh;
+    background: black;
+    opacity: 0.7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .markdown-text {
+    line-height: 2em;
+  }
+
+  body, input, p, textarea {
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+  .markdown-text p {
     font-size: 15px;
     line-height: 1.7em;
     overflow: auto;
     white-space: pre-wrap;
+  }
+
+  .markdown-text  h2 {
+    margin: 30px 0 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .markdown-text pre {
+    background: #f7f7f7;
+    padding: 10px;
   }
 
   .content_main {
@@ -138,7 +168,7 @@
     padding: 13px 10px;
   }
 
-  .reply_support{
+  .reply_support {
     float: right;
   }
 
@@ -161,5 +191,9 @@
 
   .reply_list a {
     text-decoration: none;
+  }
+
+  pre code {
+    white-space: pre-wrap;
   }
 </style>

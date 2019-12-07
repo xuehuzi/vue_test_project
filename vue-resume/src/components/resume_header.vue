@@ -4,7 +4,7 @@
       <div class="header_icon">
         <span href="" class="nav_icon">
           <img src="../assets/logo.svg" alt="">
-          <span>name • 应聘Web前端</span>
+          <span>薛玉虎 • 应聘Web前端</span>
         </span>
       </div>
       <div class="nav_list">
