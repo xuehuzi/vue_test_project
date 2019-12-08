@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    <div v-if="isloading" class="loading_animation">
+    <div v-show="isloading" class="loading_animation">
       <div class="loading"></div>
     </div>
-    <div v-else class="wrapper">
+    <div class="wrapper">
       <div class="svg_bg">
         <svg id="shape-1" class="shape-1" height="519" width="758" fill="black">
           <polygon class="pol" points="0,455,693,352,173,0,92,0,0,71"></polygon>
         </svg>
         <svg id="shape-2" class="shape-2" height="536" width="633" fill="#c0e3e7">
           <polygon points="0,0,633,0,633,536"></polygon>
-
         </svg>
       </div>
       <resume_header></resume_header>
@@ -29,14 +28,14 @@
     },
     data: function () {
       return {
-        isloading: true
+        isloading: true,
       }
     },
     mounted() {
       let that = this;
-      let timer = setTimeout(function () {
+      setTimeout(function () {
         that.isloading = false;
-      }, 3000)
+      }, 2000)
     }
   }
 </script>
@@ -94,10 +93,11 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    z-index: 1;
     display: flex;
     justify-content: center;
     overflow: auto;
+    z-index: 5;
+    background: #fff;
   }
 
   .loading {
