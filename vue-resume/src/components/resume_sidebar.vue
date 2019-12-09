@@ -20,14 +20,13 @@
       return {
         imglists: [
           {
-            src: require('../assets/download.svg'),
-            introduce: '下载简历',
-            href:require('../assets/avatar.png')
-          },
-          {
             src: require('../assets/github.svg'),
             introduce: '查看源码',
             href:'https://github.com/xuehuzi?tab=overview&from=2019-12-01&to=2019-12-03'
+          },
+          {
+            src: require('../assets/download.svg'),
+            introduce: '敬请期待',
           },
           {
             src: require('../assets/code.svg'),

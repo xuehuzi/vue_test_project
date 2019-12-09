@@ -36,7 +36,7 @@
           <div class="time_line">
             <span>
               <strong>{{history.star_time}}</strong>
-              <span>--</span>
+              <span>-</span>
               <strong>{{history.end_time}}</strong>
             </span>
           </div>
@@ -72,51 +72,33 @@
       return {
         myname: '求职意向：Web前端',
         infos: ['姓名：薛玉虎', '年龄：31', '性别：男', '学历：专科', '城市：西安', '电话：189—9139—8171', '邮箱：xueyuhu5084@163.com'],
-        skills: ['HTML 5 & CSS 3', 'JavaScript', 'Vue', 'Http', 'Webpack', '产品及运营相关'],
+        skills: ['HTML 5 & CSS 3', 'JavaScript', 'Vue', 'Http', 'Webpack、Axios、tween.js', '产品及运营相关'],
         active: 0,
         historys: [
           {
-            star_time: '2019.2',
-            end_time: '2019.2',
-            company_name: '中国科技有限责任公司公司',
-            post_name: '运营策划',
-            job_content: `
-              • 提出数据统计点需求，通过excel进行数据统计分析进行数据统计分析数据统计。eqweqweqwe4545455445
-              • 提出数据统计点需求，通过excel进行数据统计分析进行数据统计分析数据统计。
-              • 提出数据统计点需求，通过excel进行数据统计分析进行数据统计分析数据统计。
-              • 提出数据统计点需求，通过excel进行数据统计分析进行数据统计分析数据统计。
-              • 提出数据统计点需求，通过excel进行数据统计分析进行数据统计分析数据统计。
-              • 提出数据统计点需求，通过excel进行数据统计分析进行数据统计分析数据统计。
-              • 提出数据统计点需求，通过excel进行数据统计分析进行数据统计分析数据统计。`
+            star_time: '2018.09',
+            end_time: '2019.04',
+            company_name: '陕西互亿通讯科技 ',
+            post_name: '电商运营',
+            job_content: `负责第三方电商平台和公司小程序平台用户运营工作；设计并制作商品详情页；品牌关键字 SEO。`
           },
           {
-            star_time: '2019.2',
-            end_time: '2019.2',
-            company_name: '中国科技有限责任公司公司',
-            post_name: '运营策划',
-            job_content: '1231231231231231231232133123123123123123123123123'
+            star_time: '2017.05',
+            end_time: '2018.07',
+            company_name: '陕西大唐智城电子商务有限公司 ',
+            post_name: '电商运营',
+            job_content: '负责公司旗下电商平台订单数据统计分析；' +
+              '通过订单数据对用户分层、分析用户购买行为、下单商\n' +
+              '品分类等数据进行挖掘，为销售及运营推广活动提供方向支持。 '
           },
           {
-            star_time: '2019.2',
-            end_time: '2019.2',
-            company_name: '中国科技有限责任公司公司',
-            post_name: '运营策划',
-            job_content: '1231231231231231231232133123123123123123123123123'
-          },
-          {
-            star_time: '2019.2',
-            end_time: '2019.2',
-            company_name: '中国科技有限责任公司公司',
-            post_name: '运营策划',
-            job_content: '1231231231231231231232133123123123123123123123123'
-          },
-          {
-            star_time: '2006.9',
-            end_time: '2009.6',
-            company_name: '学校：杨凌职业技术学院',
-            post_name: '专业：旅游管理',
-            job_content: ''
-          },
+            star_time: '2009.05',
+            end_time: '2016.11',
+            company_name: '陕西全盛科技有限公司 ',
+            post_name: '游戏策划',
+            job_content: '编写产品需求文档，设计产品原型图及流程图；开发过程中协调开发进度；' +
+              '开发完成后进行功能测试验收等，项目上线后进行各个功能点数据统计分析。策划任职期间全程参了 4 款手游 1 款页游 1款车贷金融 App，从立项到开发再到上线运营的完'
+          }
         ],
         works: [
           {
@@ -268,27 +250,27 @@
   }
 
   .section_list_3 > ol > li:nth-child(1) > .skill_bar11::before {
-    width: 10%;
+    width: 80%;
   }
 
   .section_list_3 > ol > li:nth-child(2) > .skill_bar11::before {
-    width: 20%;
+    width: 70%;
   }
 
   .section_list_3 > ol > li:nth-child(3) > .skill_bar11::before {
-    width: 30%;
+    width: 60%;
   }
 
   .section_list_3 > ol > li:nth-child(4) > .skill_bar11::before {
-    width: 40%;
+    width: 30%;
   }
 
   .section_list_3 > ol > li:nth-child(5) > .skill_bar11::before {
-    width: 50%;
+    width: 30%;
   }
 
   .section_list_3 > ol > li:nth-child(6) > .skill_bar11::before {
-    width: 60%;
+    width: 85%;
   }
 
   .skill_bar {
@@ -320,7 +302,7 @@
 
   .time_line {
     padding-right: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .time_line > span {

@@ -52,12 +52,11 @@
         content_lists: [
           {
             name: 'cavas画板',
-            stack: 'js/vue/css/webpack',
+            stack: 'Vue、webpack、Leancloud、tween.js、Html5、CSS3 ',
             description:
-              `项目说明,项目说明,项目说明,项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明
-            项目说明,项目说明,项目说明,项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明
-            项目说明,项目说明,项目说明,项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明
-            项目说明,项目说明,项目说明,项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明项目说明`,
+              `通过 Vue-cil 搭建，webpack 打包发布。主要功能模块有拉取历史留言、发布新留言
+              （Leancloud存储数据）、自适应无缝轮播、定位导航等；轮播和滚动的缓动动画通过第三方动画
+                库tween.js实现。 `,
             imgs: [
               {src: require('../assets/canvas.jpg')}
             ],
@@ -65,8 +64,9 @@
           },
           {
             name: '原生JS(ES6)实现音乐播放器',
-            stack: 'js/vue/css/webpack',
-            description: '项目说明',
+            stack: 'JavaScript（ES6）、Html5、CSS3 ',
+            description: '通过原生 ES6 语法开发手机端播放器，实现功能有播放、暂停、上一曲、下一曲、播\n' +
+              '放列表、播放界面和歌词界面滑动切换、歌词同步展示。 ',
             imgs: [
               {src: require('../assets/music.jpg')},
               {src: require('../assets/music1.jpg')},
@@ -78,8 +78,10 @@
           },
           {
             name: 'Vue搭建cnnode社区',
-            stack: 'js/vue/css/webpack',
-            description: '项目说明',
+            stack: 'Vue、Vue-Router、webpack、Axios、Html5、CSS3 ',
+            description: '通过Vue-cil搭建，webpack打包发布。使用官方提供的API接口仿写cnnode社区\n' +
+              '实现功能有拉取文章列表、文章详情展示、文章分类、个人信息展示、路由跳转使用Vue- Router\n' +
+              '实现，API请求通过Axios实现。',
             imgs: [
               {src: require('../assets/cnnode.jpg')},
               {src: require('../assets/cnnode1.jpg')},
@@ -90,8 +92,10 @@
           },
           {
             name: '原生JS(ES5)实现WebQQ界面',
-            stack: 'js/vue/css/webpack',
-            description: '项目说明',
+            stack: 'JavaScript（ES5）、 Html5、CSS3 ',
+            description: '使用原生JS 和CSS3仿写webqq的PC端界面，实现简单的输入验证、文字和表情发\n' +
+              '送、状态切换、不同窗口打开叠加关系处理、正则实现输入框表情文字快速输入和删除、@media\n' +
+              '实现桌PC响应式布局。 ',
             imgs: [
               {src: require('../assets/webqq.jpg')},
               {src: require('../assets/webqq1.jpg')},
@@ -103,8 +107,8 @@
           },
           {
             name: '原生JS(ES5)实现转盘抽奖',
-            stack: 'js/vue/css/webpack',
-            description: '项目说明',
+            stack: 'JavaScript（ES5）、 Html5、CSS3 ',
+            description: '使用原生js开发，指针动画采用自己封装的一个缓动动画函数，抽奖和概率和奖品可以手动配置修改',
             imgs: [
               {src: require('../assets/choujiang.jpg')},
             ],
@@ -112,8 +116,8 @@
           },
           {
             name: '原生JS & CSS3实现皮卡丘动画',
-            stack: 'js/vue/css/webpack',
-            description: '项目说明',
+            stack: 'JavaScript（ES5）、 Html5、CSS3 ',
+            description: '该项目主要是为了练习CSS3伪元素和计时器的练习作品，代码实现自动播放CSS画图的全过程。',
             imgs: [
               {src: require('../assets/pikaqiu.jpg')},
             ],
