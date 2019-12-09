@@ -22,9 +22,10 @@
           {
             src: require('../assets/github.svg'),
             introduce: '查看源码',
-            href:'https://github.com/xuehuzi?tab=overview&from=2019-12-01&to=2019-12-03'
+            href: 'https://github.com/xuehuzi?tab=overview&from=2019-12-01&to=2019-12-03'
           },
           {
+            // href: require('../assets/薛玉虎__应聘__Web前端.pdf'),
             src: require('../assets/download.svg'),
             introduce: '敬请期待',
           },
