@@ -2,7 +2,7 @@
   <div class="sidebar">
     <div class="sidebar_icon">
       <p v-for="(imglist,index) in imglists" @mouseenter="show_introduce($event)" @mouseleave="del_introduce($event)">
-        <a :href="imglist.href" target="_blank" download="">
+        <a :href="imglist.href" target="_blank" download="薛玉虎__应聘__Web前端">
           <img :src="imglist.src" alt="">
         </a>
         <span class="befor">{{imglist.introduce}}</span>
@@ -25,9 +25,9 @@
             href: 'https://github.com/xuehuzi?tab=overview&from=2019-12-01&to=2019-12-03'
           },
           {
-            // href: require('../assets/薛玉虎__应聘__Web前端.pdf'),
+            href: require('url-loader!../assets/薛玉虎__应聘__Web前端.pdf'),
             src: require('../assets/download.svg'),
-            introduce: '敬请期待',
+            introduce: '下载简历',
           },
           {
             src: require('../assets/code.svg'),
