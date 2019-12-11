@@ -17,7 +17,8 @@
     width: 100%;
     height: 70px;
     background: #fff;
-
+    position: relative;
+    bottom: 0;
   }
 
   .bottom_main{

@@ -38,8 +38,8 @@
     width: 90%;
     max-width: 1400px;
     min-width: 960px;
-    min-height: 400px;
     margin: 60px auto 10px auto;
+    min-height: 100vh;
   }
 
   li {
