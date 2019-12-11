@@ -81,7 +81,7 @@
           <span class="last_reply">{{item.last_reply_at | time_filter}}</span>
         </li>
         <li>
-          <paging @pagingmsg="mainmsg"></paging>
+          <paging @pagingmsg="mainmsg" :reset_paging="reset_paging"></paging>
         </li>
       </ul>
     </div>
@@ -109,7 +109,8 @@
         items4: [],
         items_good: [],
         show_flg: 0,
-        limit_numb: 0
+        limit_numb: 0,
+        reset_paging:false
         //
       }
     },
@@ -161,18 +162,22 @@
           .catch()
       },
       mainmsg: function (val) {
+        console.log(val)
+        console.log(this.pagenumb)
         this.pagenumb = val;
-        if (this.show_flg !== 1) {//当前分类翻页不能影响其他分类翻页
-          this.getData();
-        } else {
-          this.get_good()
+        this.get_good();
+        this.getData();
+        //
+        if(val === 1){
+          this.reset_paging = false
         }
+        //
       },
       content_choice: function (index) {
         this.content_tab_num = index;
         //
         this.show_flg = index
-        //
+        this.reset_paging = true//true重置分页到第一页
       }
     },
     beforeMount() {//熟悉下，生命周期钩子函数

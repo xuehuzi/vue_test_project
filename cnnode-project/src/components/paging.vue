@@ -13,11 +13,12 @@
 <script>
   export default {
     name: "paging",
+    props: ['reset_paging', 'pagingmsg'],
     data: function () {
       return {
         btn_lists: [1, 2, 3, 4, 5, '......'],
         selent_page: 1,
-        btn_switch: false
+        btn_switch: false,
       }
     },
     methods: {
@@ -40,7 +41,7 @@
             //移除最后一个数字
             this.btn_lists.splice(5, 1);
           }
-          this.$emit('pagingmsg',this.selent_page)
+          this.$emit('pagingmsg', this.selent_page)
         }
       },
       page_home: function () {
@@ -57,12 +58,20 @@
       page_down: function () {
         this.changebtn(this.selent_page + 1);
       }
+    },
+    watch: {
+      reset_paging: function (val) {//监听父组件是否重置分页到第一页
+        if (val === true) {
+          this.selent_page = 1
+          this.changebtn(1)
+        }
+      }
     }
   }
 </script>
 
 <style scoped>
-  .paging{
+  .paging {
     margin-top: 5px;
     background-color: white;
     padding: 6px 20px;
@@ -71,7 +80,7 @@
     text-align: center;
   }
 
-  .default_class{
+  .default_class {
     background-color: #fff;
     border: 1px solid #ddd;
     color: #778087;
@@ -82,6 +91,7 @@
     width: 55px;
     height: 29px;
   }
+
   .selent_class_page {
     color: white;
     background-color: #1f1b1b;

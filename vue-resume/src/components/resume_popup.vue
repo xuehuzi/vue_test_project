@@ -54,9 +54,8 @@
             name: 'cavas画板',
             stack: 'Vue、webpack、Leancloud、tween.js、Html5、CSS3 ',
             description:
-              `通过 Vue-cil 搭建，webpack 打包发布。主要功能模块有拉取历史留言、发布新留言
-              （Leancloud存储数据）、自适应无缝轮播、定位导航等；轮播和滚动的缓动动画通过第三方动画
-                库tween.js实现。 `,
+              `使用原生 JS 和 Canvas 实现的画图板，实现功能有颜色选择、画笔选择、橡皮擦、全
+               部清除、画图导出。`,
             imgs: [
               {src: require('../assets/canvas.jpg')}
             ],
@@ -65,8 +64,8 @@
           {
             name: '原生JS(ES6)实现音乐播放器',
             stack: 'JavaScript（ES6）、Html5、CSS3 ',
-            description: '通过原生 ES6 语法开发手机端播放器，实现功能有播放、暂停、上一曲、下一曲、播\n' +
-              '放列表、播放界面和歌词界面滑动切换、歌词同步展示。 ',
+            description: '使用原生 JS 开发，实现功能有播放、暂停、上一曲、下一曲、播放列表、播放界面和\n' +
+              '歌词界面滑动切换、歌词同步展示。',
             imgs: [
               {src: require('../assets/music.jpg')},
               {src: require('../assets/music1.jpg')},
@@ -79,9 +78,9 @@
           {
             name: 'Vue搭建cnnode社区',
             stack: 'Vue、Vue-Router、webpack、Axios、Html5、CSS3 ',
-            description: '通过Vue-cil搭建，webpack打包发布。使用官方提供的API接口仿写cnnode社区\n' +
-              '实现功能有拉取文章列表、文章详情展示、文章分类、个人信息展示、路由跳转使用Vue- Router\n' +
-              '实现，API请求通过Axios实现。',
+            description: `通过 Vue-cil 构建，webpack 打包发布；跳转使用 Vue- Router 实现，API 请求通过
+                          Axios 实现；实现功能有拉取文章列表、列表分页、文章详情展示、文章分类、个人信息展示、文
+                          章日期过滤（filter 实现）等功能。`,
             imgs: [
               {src: require('../assets/cnnode.jpg')},
               {src: require('../assets/cnnode1.jpg')},
@@ -93,9 +92,9 @@
           {
             name: '原生JS(ES5)实现WebQQ界面',
             stack: 'JavaScript（ES5）、 Html5、CSS3 ',
-            description: '使用原生JS 和CSS3仿写webqq的PC端界面，实现简单的输入验证、文字和表情发\n' +
-              '送、状态切换、不同窗口打开叠加关系处理、正则实现输入框表情文字快速输入和删除、@media\n' +
-              '实现桌PC响应式布局。 ',
+            description: '使用原生 JS 和 CSS3 仿写 webqq 的 PC 端响应式界面，功能有登陆窗口拖曳、简单的\n' +
+              '输入验证、文字发送、表情图发送、不同窗口打开叠加关系处理、正则实现输入框表情文字快速输\n' +
+              '入和删除。\n',
             imgs: [
               {src: require('../assets/webqq.jpg')},
               {src: require('../assets/webqq1.jpg')},

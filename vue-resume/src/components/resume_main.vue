@@ -25,7 +25,7 @@
         <h2>技能</h2>
         <ol>
           <li v-for="skill in skills">
-            <h3>{{skill}}</h3>
+            <p>{{skill}}</p>
             <div class="skill_bar"></div>
           </li>
         </ol>
@@ -71,8 +71,16 @@
     data: function () {
       return {
         myname: '求职意向：Web前端',
-        infos: ['姓名：薛玉虎', '年龄：31', '性别：男', '学历：专科', '城市：西安', '电话：189—9139—8171', '邮箱：xueyuhu5084@163.com'],
-        skills: ['HTML 5 & CSS 3', 'JavaScript', 'Vue', 'Http', 'Webpack、Axios、tween.js', '产品及运营相关'],
+        infos: ['姓名：薛玉虎', '性别：男', '城市：西安', '电话：189—9139—8171', '邮箱：xueyuhu5084@163.com'],
+        skills: [
+          '熟练使用 Html5、CSS3 完成静态页面布局，实现页面交互及动画效果；会使用 vw、vh、rem 实\n' +
+          '现移动端布局和响应式布局。',
+          '熟悉原生 JavaScript、对 ES6 语法有使用基础，理解 JavaScript 核心概念。',
+          '会使用 Vue.js，能够使用 Vue 全家桶构建并开发项目。',
+          '会使用 webpack 对项目进行打包，会基础的 loader 安装。',
+          '了解 Http 基础知识，能够使用 Ajax、Axios 到实际项目开发中。\n',
+          '了解 jQuery、Bootstrap 等框架，可快速上手开发。',
+        ],
         active: 0,
         historys: [
           {
@@ -92,12 +100,19 @@
               '品分类等数据进行挖掘，为销售及运营推广活动提供方向支持。 '
           },
           {
-            star_time: '2009.05',
+            star_time: '2009.06',
             end_time: '2016.11',
             company_name: '陕西全盛科技有限公司 ',
             post_name: '游戏策划',
             job_content: '编写产品需求文档，设计产品原型图及流程图；开发过程中协调开发进度；' +
               '开发完成后进行功能测试验收等，项目上线后进行各个功能点数据统计分析。策划任职期间全程参了 4 款手游 1 款页游 1款车贷金融 App，从立项到开发再到上线运营的全部过程。'
+          },
+          {
+            star_time: '2006.09',
+            end_time: '2009.06',
+            company_name: '杨凌职业技术学院（专科）',
+            post_name: '旅游管理',
+            job_content: ''
           }
         ],
         works: [
@@ -206,7 +221,7 @@
   }
 
   .header_info {
-  padding-top: 30px;
+    padding-top: 30px;
   }
 
   .header_info p {
@@ -240,7 +255,7 @@
   }
 
   .section_list_3 > ol > li {
-    width: 45%;
+    width: 100%;
     display: inline-block;
     margin: 35px 15px 10px 0;
   }
@@ -250,7 +265,7 @@
   }
 
   .section_list_3 > ol > li:nth-child(1) > .skill_bar11::before {
-    width: 80%;
+    width: 85%;
   }
 
   .section_list_3 > ol > li:nth-child(2) > .skill_bar11::before {
@@ -270,11 +285,11 @@
   }
 
   .section_list_3 > ol > li:nth-child(6) > .skill_bar11::before {
-    width: 85%;
+    width: 30%;
   }
 
   .skill_bar {
-    height: 5px;
+    height: 2px;
     background: #FAE1E1;
     border-radius: 2px;
     margin-top: 4px;
