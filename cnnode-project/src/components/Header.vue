@@ -8,11 +8,11 @@
         <router-link :to="{name:'root'}">
           <li>首页</li>
         </router-link>
-        <li>新手入门</li>
-        <li>API</li>
-        <li>关于</li>
-        <li>注册</li>
-        <li>登陆</li>
+        <!--<li>新手入门</li>-->
+        <!--<li>API</li>-->
+        <!--<li>关于</li>-->
+        <!--<li>注册</li>-->
+        <!--<li>登陆</li>-->
       </ul>
     </div>
   </div>

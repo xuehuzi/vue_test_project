@@ -2,7 +2,7 @@
   <div class="paging">
     <button @click="page_home" class="default_class">首页</button>
     <button @click="page_up" class="default_class">上一页</button>
-    <button v-if="btn_switch" class="default_class">......</button>
+    <button v-if="(selent_page > 4)" class="default_class">......</button>
     <button @click="changebtn(btnlist)" v-for="btnlist in btn_lists"
             :class="[{selent_class_page:btnlist === selent_page},'default_class']">{{btnlist}}
     </button>
@@ -18,18 +18,12 @@
       return {
         btn_lists: [1, 2, 3, 4, 5, '......'],
         selent_page: 1,
-        btn_switch: false,
       }
     },
     methods: {
       changebtn: function (page_numb) {
         if (typeof page_numb === 'number') {
           this.selent_page = page_numb;
-          if (page_numb > 4) {
-            this.btn_switch = true
-          } else {
-            this.btn_switch = false
-          }
           if (page_numb === this.btn_lists[4]) {
             //移除第一个数字
             this.btn_lists.shift();
@@ -40,6 +34,9 @@
             this.btn_lists.unshift(this.btn_lists[0] - 1);
             //移除最后一个数字
             this.btn_lists.splice(5, 1);
+          } else if (page_numb === 1) {
+            this.btn_lists = [1, 2, 3, 4, 5, '......'];
+            this.selent_page = 1
           }
           this.$emit('pagingmsg', this.selent_page)
         }

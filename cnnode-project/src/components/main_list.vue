@@ -10,6 +10,8 @@
           <a @click="content_choice(index)" v-for="(content_tab,index) in content_tabs"
              :class="[{content_tab_active:(index === content_tab_num),content_tab_default:(index !== content_tab_num)}]">{{content_tab}}</a>
         </li>
+        <li v-if="show_flg === 4">没有API</li>
+        <li v-if="show_flg === 5">没有API</li>
         <li v-if="show_flg === 1" v-for="items4 in items4">
           <router-link :to="{name:'GoUserInfo',params:{name:items4.author.loginname}}">
             <img :src="items4.author.avatar_url" class="reply_icon">
@@ -110,7 +112,7 @@
         items_good: [],
         show_flg: 0,
         limit_numb: 0,
-        reset_paging:false
+        reset_paging: false
         //
       }
     },
@@ -162,13 +164,11 @@
           .catch()
       },
       mainmsg: function (val) {
-        console.log(val)
-        console.log(this.pagenumb)
         this.pagenumb = val;
         this.get_good();
         this.getData();
         //
-        if(val === 1){
+        if (val === 1) {
           this.reset_paging = false
         }
         //
@@ -176,8 +176,8 @@
       content_choice: function (index) {
         this.content_tab_num = index;
         //
-        this.show_flg = index
-        this.reset_paging = true//true重置分页到第一页
+        this.show_flg = index;
+        this.reset_paging = true;//true重置分页到第一页
       }
     },
     beforeMount() {//熟悉下，生命周期钩子函数
