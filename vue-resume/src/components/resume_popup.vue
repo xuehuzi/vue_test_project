@@ -121,6 +121,24 @@
               {src: require('../assets/pikaqiu.jpg')},
             ],
             href: 'https://xuehuzi.github.io/jirengu/%E7%9A%AE%E5%8D%A1%E4%B8%98demo.html'
+          },
+          {
+            name: '微信小程序后台',
+            stack: '微信小程序后台 ',
+            description: '微信小程序后台',
+            imgs: [
+              {src: require('../assets/pikaqiu.jpg')},
+            ],
+            href: 'https://xuehuzi.github.io/jirengu/%E7%9A%AE%E5%8D%A1%E4%B8%98demo.html'
+          },
+          {
+            name: '微信小程序',
+            stack: '微信小程序 ',
+            description: '微信小程序',
+            imgs: [
+              {src: require('../assets/pikaqiu.jpg')},
+            ],
+            href: 'https://xuehuzi.github.io/jirengu/%E7%9A%AE%E5%8D%A1%E4%B8%98demo.html'
           }
         ],
         spots_indexflg: 0,

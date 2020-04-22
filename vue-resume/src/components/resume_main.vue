@@ -118,6 +118,14 @@
         works: [
           {
             src: require('../assets/cnnode.jpg'),
+            content: '微信小程序后台'
+          },
+          {
+            src: require('../assets/cnnode.jpg'),
+            content: '微信小程序'
+          },
+          {
+            src: require('../assets/cnnode.jpg'),
             content: 'Vue搭建cnnode社区'
           },
           {
@@ -139,7 +147,7 @@
           {
             src: require('../assets/canvas.jpg'),
             content: 'cavas画板'
-          },
+          }
         ],
         fathermsg: '',
         fathermsg1: false,
