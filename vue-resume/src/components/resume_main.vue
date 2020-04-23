@@ -73,13 +73,13 @@
         myname: '求职意向：Web前端',
         infos: ['姓名：薛玉虎', '性别：男', '城市：西安', '电话：189—9139—8171', '邮箱：xueyuhu5084@163.com'],
         skills: [
-          '熟练使用 Html5、CSS3 完成静态页面布局，实现页面交互及动画效果；会使用 vw、vh、rem 实\n' +
-          '现移动端布局和响应式布局。',
+          '熟练使用Html5、CSS3完成PC端和移动端布局，实现页面交互及动画效果。',
           '熟悉原生 JavaScript、对 ES6 语法有使用基础，理解 JavaScript 核心概念。',
-          '会使用 Vue.js，能够使用 Vue 全家桶构建并开发项目。',
-          '会使用 webpack 对项目进行打包，会基础的 loader 安装。',
-          '了解 Http 基础知识，能够使用 Ajax、Axios 到实际项目开发中。\n',
-          '了解 jQuery、Bootstrap 等框架，可快速上手开发。',
+          '会使用Vue.js，能够使用Vue全家桶构建并开发项目。',
+          '会微信小程序开发，有实际个人项目开发经验。',
+          '会使用 webpack ,个人简历所列的部分项目就是使用webpack进行打包发布。',
+          '知道Http基础知识，能够使用Ajax、Axios到实际项目开发中。\n',
+          '能够使用jQuery、Bootstrap，ElementUI等第三方框架&库，可快速上手开发。',
         ],
         active: 0,
         historys: [
@@ -117,11 +117,11 @@
         ],
         works: [
           {
-            src: require('../assets/cnnode.jpg'),
-            content: '微信小程序后台'
+            src: require('../assets/back-end1.jpg'),
+            content: '微信小程序项目后台'
           },
           {
-            src: require('../assets/cnnode.jpg'),
+            src: require('../assets/wx1.jpg'),
             content: '微信小程序'
           },
           {
@@ -285,7 +285,7 @@
   }
 
   .section_list_3 > ol > li:nth-child(4) > .skill_bar11::before {
-    width: 30%;
+    width: 50%;
   }
 
   .section_list_3 > ol > li:nth-child(5) > .skill_bar11::before {
@@ -293,6 +293,10 @@
   }
 
   .section_list_3 > ol > li:nth-child(6) > .skill_bar11::before {
+    width: 30%;
+  }
+
+  .section_list_3 > ol > li:nth-child(7) > .skill_bar11::before {
     width: 30%;
   }
 

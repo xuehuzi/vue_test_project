@@ -123,22 +123,31 @@
             href: 'https://xuehuzi.github.io/jirengu/%E7%9A%AE%E5%8D%A1%E4%B8%98demo.html'
           },
           {
-            name: '微信小程序后台',
-            stack: '微信小程序后台 ',
-            description: '微信小程序后台',
+            name: '微信小程序项目后台',
+            stack: 'Vue、Leancloud、ElementUI ',
+            description: '后台使用Vue、Leancloud、ElementUI开发，\n' +
+            '实现功能有简单的注册、登录、添加商户、修改商户信息、商户信息查询、各项表单输入验证。',
             imgs: [
-              {src: require('../assets/pikaqiu.jpg')},
+              {src: require('../assets/back-end1.jpg')},
+              {src: require('../assets/back-end2.png')},
+              {src: require('../assets/back-end3.png')},
+              {src: require('../assets/back-end1.jpg')},
             ],
-            href: 'https://xuehuzi.github.io/jirengu/%E7%9A%AE%E5%8D%A1%E4%B8%98demo.html'
+            href: 'https://xuehuzi.github.io/backstage-project/dist/index.html#/'
           },
           {
             name: '微信小程序',
             stack: '微信小程序 ',
-            description: '微信小程序',
+            description: '小程序实现功能有商户数据展示、下拉刷新、上拉加载更多、用户订单记录、购买流程、地址添加和编辑、定位地址，以及小程序转发、访问相册等。',
             imgs: [
-              {src: require('../assets/pikaqiu.jpg')},
+              {src: require('../assets/wx1.jpg')},
+              {src: require('../assets/wx2.png')},
+              {src: require('../assets/wx3.png')},
+              {src: require('../assets/wx4.png')},
+              {src: require('../assets/wx5.png')},
+              {src: require('../assets/wx1.jpg')},
             ],
-            href: 'https://xuehuzi.github.io/jirengu/%E7%9A%AE%E5%8D%A1%E4%B8%98demo.html'
+            href: 'http://lc-urfkqxy5.cn-n1.lcfile.com/df385709164805a84995.jpg'
           }
         ],
         spots_indexflg: 0,
