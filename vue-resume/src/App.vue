@@ -13,7 +13,7 @@
         </svg>
       </div>
       <resume_header></resume_header>
-      <resume_main></resume_main>
+      <resume_main @add_over='add_over'></resume_main>
     </div>
   </div>
 </template>
@@ -31,11 +31,14 @@
         isloading: true,
       }
     },
-    mounted() {
-      let that = this;
-      setTimeout(function () {
-        that.isloading = false;
-      }, 2000)
+    methods:{
+      add_over:function(val){
+        if(val){
+          this.isloading = false;
+        }else {
+          this.isloading = true;
+        }
+      }
     }
   }
 </script>
