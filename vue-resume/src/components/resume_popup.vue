@@ -59,7 +59,7 @@
             imgs: [
               {src: require('../assets/canvas.jpg')}
             ],
-            href: 'https://xuehuzi.github.io/jirengu/Canvas%E7%94%BB%E6%9D%BF.html'
+            href: 'https://youngfever.gitee.io/jirengu/Canvas%E7%94%BB%E6%9D%BF.html'
           },
           {
             name: '原生JS(ES6)实现音乐播放器',
@@ -73,7 +73,7 @@
               {src: require('../assets/music.jpg')}
 
             ],
-            href: 'https://xuehuzi.github.io/jirengu/Demo/music-demo/dist/index.html'
+            href: 'https://youngfever.gitee.io/jirengu/Demo/music-demo/dist/index.html'
           },
           {
             name: 'Vue搭建cnnode社区',
@@ -87,7 +87,7 @@
               {src: require('../assets/cnnode2.jpg')},
               {src: require('../assets/cnnode.jpg')}
             ],
-            href: 'https://xuehuzi.github.io/vue_test_project/cnnode-project/dist/index.html'
+            href: 'https://youngfever.gitee.io/vue_test_project/cnnode-project/dist/index.html'
           },
           {
             name: '原生JS(ES5)实现WebQQ界面',
@@ -102,7 +102,7 @@
               {src: require('../assets/webqq3.jpg')},
               {src: require('../assets/webqq.jpg')}
             ],
-            href: 'https://xuehuzi.github.io/Self-taught/Native%20javascript/index.html'
+            href: 'https://youngfever.gitee.io/self-taught/Native%20javascript/index.html'
           },
           {
             name: '原生JS(ES5)实现转盘抽奖',
@@ -111,7 +111,7 @@
             imgs: [
               {src: require('../assets/choujiang.jpg')},
             ],
-            href: 'https://xuehuzi.github.io/Self-taught/Native%20javascript/%E6%8A%BD%E5%A5%96.html'
+            href: 'https://youngfever.gitee.io/self-taught/Native%20javascript/%E6%8A%BD%E5%A5%96.html'
           },
           {
             name: '原生JS & CSS3实现皮卡丘动画',
@@ -120,7 +120,7 @@
             imgs: [
               {src: require('../assets/pikaqiu.jpg')},
             ],
-            href: 'https://xuehuzi.github.io/jirengu/%E7%9A%AE%E5%8D%A1%E4%B8%98demo.html'
+            href: 'https://youngfever.gitee.io/jirengu/%E7%9A%AE%E5%8D%A1%E4%B8%98demo.html'
           },
           {
             name: '微信小程序项目后台',
@@ -133,7 +133,7 @@
               {src: require('../assets/back-end3.png')},
               {src: require('../assets/back-end1.jpg')},
             ],
-            href: 'https://xuehuzi.github.io/backstage-project/dist/index.html#/'
+            href: 'https://youngfever.gitee.io/backstage-project/dist/index.html'
           },
           {
             name: '微信小程序',
