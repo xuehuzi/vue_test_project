@@ -174,10 +174,7 @@
       getson: function (val) {
         this.ttsss = val;//接收子组件弹出框遮罩关闭发来的消息
         this.fathermsg1 = false;
-      },
-    },
-    mounted:function(){
-      this.$emit('add_over', true);//向父组件发送遮罩关闭消息
+      }
     }
   }
 </script>

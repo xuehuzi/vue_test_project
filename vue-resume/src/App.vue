@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div v-show="isloading" class="loading_animation">
+    <div v-if="isloading" class="loading_animation">
       <div class="loading"></div>
     </div>
-    <div class="wrapper">
+    <div v-else class="wrapper">
       <div class="svg_bg">
         <svg id="shape-1" class="shape-1" height="519" width="758" fill="black">
           <polygon class="pol" points="0,455,693,352,173,0,92,0,0,71"></polygon>
@@ -13,7 +13,7 @@
         </svg>
       </div>
       <resume_header></resume_header>
-      <resume_main @add_over='add_over'></resume_main>
+      <resume_main></resume_main>
     </div>
   </div>
 </template>
@@ -32,13 +32,13 @@
       }
     },
     methods:{
-      add_over:function(val){
-        if(val){
-          this.isloading = false;
-        }else {
-          this.isloading = true;
-        }
-      }
+
+    },
+    created:function(){
+        console.log(this.isloading)
+        console.log('加载OK')
+        this.isloading = false
+        console.log(this.isloading)
     }
   }
 </script>
