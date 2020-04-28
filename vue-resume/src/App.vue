@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div v-if="isloading" class="wrapper">
+    <div class="wrapper">
       <div class="svg_bg">
         <svg id="shape-1" class="shape-1" height="519" width="758" fill="black">
           <polygon class="pol" points="0,455,693,352,173,0,92,0,0,71" />
@@ -10,10 +10,7 @@
         </svg>
       </div>
       <resume_header></resume_header>
-      <resume_main :get_test='get_test'></resume_main>
-    </div>
-    <div v-else class="loading_animation">
-      <div class="loading"></div>
+      <resume_main></resume_main>
     </div>
   </div>
 </template>
@@ -28,20 +25,16 @@ export default {
     resume_main
   },
   data: function() {
-    return {
-      isloading: false
-    };
+    return {};
   },
-  methods: {
-      get_test:function(res){
-
-      }
-  },
-
   created: function() {
-    console.log("加载OK");
-    this.isloading = true;
-    console.log(this.isloading);
+    document.body.removeChild(document.getElementById("app_loading"));
+    // try {
+    //   document.body.removeChild(document.getElementById("appLoading"));
+    //   setTimeout(function() {
+    //     document.getElementById("app").style.display = "block";
+    //   }, 500);
+    // } catch (e) {}
   }
 };
 </script>
@@ -102,7 +95,7 @@ li {
   justify-content: center;
 }
 
-.loading_animation {
+/* .loading_animation {
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -146,5 +139,5 @@ li {
     width: 100px;
     opacity: 0;
   }
-}
+} */
 </style>

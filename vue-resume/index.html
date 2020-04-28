@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>vue-resume</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>vue-resume</title>
+  <style>
+    .loading_animation {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      overflow: auto;
+      z-index: 5;
+      background: #fff;
+    }
+
+    .loading {
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 50%;
+    }
+
+    .loading::before,
+    .loading::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      animation: loading_animation 2s linear infinite;
+      background: black;
+    }
+
+    .loading::after {
+      animation-delay: 0.75s;
+    }
+
+    @keyframes loading_animation {
+      from {
+        height: 0;
+        width: 0;
+        opacity: 1;
+      }
+
+      to {
+        height: 100px;
+        width: 100px;
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app_loading" class="loading_animation">
+    <div class="loading"></div>
+  </div>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>
